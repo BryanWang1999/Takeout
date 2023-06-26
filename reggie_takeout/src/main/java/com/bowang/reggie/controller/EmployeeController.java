@@ -13,6 +13,7 @@ import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
 
 @Slf4j
@@ -28,18 +29,18 @@ public class EmployeeController {
      * @param employee
      * @return
      */
-    @PostMapping("/login")
-    public R<Employee> login(HttpServletRequest request, @RequestBody Employee employee) {
+    @PostMapping("/login") // 前端发送的是post请求
+    public R<Employee> login(HttpServletRequest request, @RequestBody Employee employee) { // 前端发送的是JSON形式数据，所以要用 @RequestBody
         // 传 HttpServletRequest request 参数 -> 因为要操纵session
         // 1. 将页面提交的密码进行MD5加密处理
         String password = employee.getPassword();
-         log.info(password);
+        log.info(password);
         password = DigestUtils.md5DigestAsHex(password.getBytes());
 
         // 2. 根据页面提交的用户名username查询数据库
-        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(Employee::getUsername, employee.getUsername());
-        Employee emp = employeeService.getOne(queryWrapper);
+        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>(); // 包装查询对象
+        queryWrapper.eq(Employee::getUsername, employee.getUsername()); // 添加查询条件
+        Employee emp = employeeService.getOne(queryWrapper); // 执行查询 为什么调用 getOne 方法？ -> 数据库中已经对employee表中的 username 加了 unique 索引
 
         // 3. 如果没有查询到则返回登录失败结果
         if (emp == null) {
@@ -56,6 +57,7 @@ public class EmployeeController {
             return  R.error("账号已禁用");
         }
 
+        HttpSession session = request.getSession();  // for debugging -> session 的类名是 HttpSession
         // 6. 登录成功，将员工id存入Session并返回登录成功结果
         request.getSession().setAttribute("employee", emp.getId());
         return R.success(emp);
@@ -80,6 +82,7 @@ public class EmployeeController {
 
         // 设置初始密码123456，需要进行MD5加密处理
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
+
 //        employee.setCreateTime(LocalDateTime.now());
 //        employee.setUpdateTime(LocalDateTime.now());
 

@@ -12,15 +12,15 @@ import java.sql.SQLIntegrityConstraintViolationException;
 /**
  * 全局异常处理
  */
-@ControllerAdvice(annotations = {RestController.class, Controller.class})
-@ResponseBody
+@ControllerAdvice(annotations = {RestController.class, Controller.class}) // 指定拦截哪些 Controller -> 只要加了 @RestController & @Controller 注解，就会被这个处理器处理
+@ResponseBody // 我们会写一个方法，最终返回JSON数据
 @Slf4j
 public class GlobalExceptionHandler {
     /**
      * 异常处理方法
      * @return
      */
-    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
+    @ExceptionHandler(SQLIntegrityConstraintViolationException.class) // 定义当前方法要处理哪些异常
     public R<String> exceptionHandler(SQLIntegrityConstraintViolationException ex) {
         log.error(ex.getMessage());
         if (ex.getMessage().contains("Duplicate entry")) {

@@ -5,53 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dacb789-696a-43d1-a96e-52d50e81f339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/BaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/JacksonObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/DishController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/dto/DishDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/DishFlavor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Setmeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/filter/LoginCheckFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/DishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/SetmealMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/DishFlavorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/DishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/SetmealService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/backend/page/demo/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bowang/test/UploadFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cca307e9-fe75-49e5-a682-6f213a2929b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cca307e9-fe75-49e5-a682-6f213a2929b9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cca307e9-fe75-49e5-a682-6f213a2929b9/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cca307e9-fe75-49e5-a682-6f213a2929b9/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/AddressBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/OrderDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/dto/SetmealDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/AddressBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/SetmealDish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/AddressBookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/AddressBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/SetmealDishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/utils/ValidateCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/cartData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/ReggieTakeoutApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/ReggieTakeoutApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/DishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/ReggieTakeoutApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/ReggieTakeoutApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/common/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/common/R.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/mapper/SetmealMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/SetmealService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/page/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/controller/DishController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/mapper/EmployeeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/filter/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/SetmealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/SetmealService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/impl/SetmealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bowang/reggie/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/page/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../瑞吉外卖-资料/1 瑞吉外卖项目/代码/day01/reggie_take_out.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,8 +104,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wangsoserious/src/takeout/reggie_takeout/src/main/java/com/bowang/reggie/dto&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wangsoserious/src/takeout/reggie_takeout/src/main/java/com/bowang/reggie/entity&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.42988506&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
@@ -112,11 +120,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/bowang/reggie/dto" />
       <recent name="$PROJECT_DIR$/src/main/java/com/bowang/reggie/entity" />
-      <recent name="$PROJECT_DIR$/src/main/resources/backend/page/demo" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/bowang/reggie/common" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/front" />
+      <recent name="$PROJECT_DIR$/src/main/resources/front/js" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/bowang/reggie/utils" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -193,6 +201,25 @@
       <workItem from="1687281465697" duration="124000" />
       <workItem from="1687281612042" duration="30000" />
       <workItem from="1687320758080" duration="3848000" />
+      <workItem from="1687328213329" duration="1653000" />
+      <workItem from="1687356362756" duration="9141000" />
+      <workItem from="1687444018766" duration="8175000" />
+      <workItem from="1687490320934" duration="8000" />
+      <workItem from="1687495064976" duration="204000" />
+      <workItem from="1687529750312" duration="8774000" />
+      <workItem from="1687577299777" duration="48000" />
+      <workItem from="1687598610614" duration="250000" />
+      <workItem from="1687599047211" duration="105000" />
+      <workItem from="1687615460987" duration="4334000" />
+      <workItem from="1687623824415" duration="15000" />
+      <workItem from="1687699533033" duration="47000" />
+      <workItem from="1687701464020" duration="7141000" />
+      <workItem from="1687752673861" duration="834000" />
+      <workItem from="1687759998621" duration="45000" />
+      <workItem from="1687762387090" duration="185000" />
+      <workItem from="1687763185388" duration="678000" />
+      <workItem from="1687767680923" duration="1844000" />
+      <workItem from="1687787681416" duration="6281000" />
     </task>
     <servers />
   </component>
@@ -211,30 +238,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bowang/reggie/service/impl/CategoryServiceImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bowang/reggie/common/GlobalExceptionHandler.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bowang/reggie/controller/DishController.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.4.5/spring-boot-autoconfigure-2.4.5.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class</url>
-          <line>82</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.springframework.core.type.StandardAnnotationMetadata" memberName="introspectedClass" />
